@@ -4,7 +4,7 @@ if(isset($_POST['submit'])) {
     $title = $_POST['todoTitle']; // connect to the title of the todo task
     $description = $_POST['todoDescription']; // show the description of the todo task
 
-    // check strings
+    // check strings, perform sanitation
     function check($string){
         $string  = htmlspecialchars($string);
         $string = strip_tags($string);
@@ -29,6 +29,7 @@ if(isset($_POST['submit'])) {
     global $link;
     $query = "INSERT INTO tasks(todoTitle, todoDescription, date) VALUES ('$title', '$description', now() )";
     $insertTodo = mysqli_query($link, $query);
+    // as the id primary key part of the table is set to autoincrement, we need not update it
     if($insertTodo){
         echo "Task added!";
     }else{
@@ -42,11 +43,10 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset='utf-8'>
     <meta author='Bobby L'>
-    <link rel="stylesheet" href="/style.css"
     <title>TODO List Application</title>
 </head>
 <body>
-<h1>Create Todo List</h1>
+<h1>TODO List</h1>
 <button type="submit"><a href="index.php">View all Todo</a></button>
 <form method="post" action="create.php">
     <p>Task title: </p>
