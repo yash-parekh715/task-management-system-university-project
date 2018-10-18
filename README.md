@@ -21,3 +21,6 @@ Learning PHP was a lot easier than JavaScript, but solving problems in JavaScrip
 So, I switched over to PHP and decided that it would be easier to send update commands from a GUI. I'm also going to include (on another branch) the progress that I was making while creating this using Node.js.
 
 Had I not switched to PHP for this application, my other option was going to be Python, which I find to be really be a jack of all trades when it comes to any sort of programming project.
+
+### Update
+If you check out the v0.1js branch, all of the files for the node version of this application are included. I thought it was an interesting approach, and figured I would include it.
