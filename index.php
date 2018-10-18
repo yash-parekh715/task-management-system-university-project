@@ -5,7 +5,6 @@ require_once("db_connect.php");
 <head>
   <meta charset='utf-8'>
   <meta author='Bobby L'>
-  <link rel="stylesheet" href="/style.css"
     <title>TODO List Application</title>
 </head>
 <body>
