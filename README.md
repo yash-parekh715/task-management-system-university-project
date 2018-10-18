@@ -1,23 +1,20 @@
 # todo-list-application
 A simple to-do list application that utilizes SQL and allows for CRUD.
 
-## How to Use
-This application requires:
-- MySQL Server
-- Apache
-
-These applications are bundled together via XAMPP. [[Download Link](https://www.apachefriends.org/download.html)]
-The setup is quite simple once you have these applications installed, as you just need to run Apache and MySQL.
-
 ### Dependencies
-This application uses PHP to connect to a locally stored MySQL database. Using the tools provided through XAMPP's installer, you can easily host this todo list application. The SQL code required to create the database has now been included.
+This outdated version of the application requires:
+- nodejs
+- sqlite3
+- npm
+  - sqlite3
+  - lodash
+  - yargs
+
+## How to Use
+After installing the base packages, using `npm install lodash sqlite3 yargs --save` in the base directory, you should be able to run a few of the scripts with node in order to create the database, add to it, and view it. Deleting from the database is the only part I wasn't able to implement in time.
 
 ### Uses
-This application is more of a proof of concept, but you can try and find a practical use out of it if you'd like.
+You can use this to see how I worked with Node.js and SQL to create an interesting way to manage a database from the commandline.
 
 ### Takeaway
-Learning PHP was a lot easier than JavaScript, but solving problems in JavaScript is much more interesting. At first, I approached this using JavaScript and Node.js, but I was running into too many issues with the SQL code.
-
-So, I switched over to PHP and decided that it would be easier to send update commands from a GUI. I'm also going to include (on another branch) the progress that I was making while creating this using Node.js.
-
-Had I not switched to PHP for this application, my other option was going to be Python, which I find to be really be a jack of all trades when it comes to any sort of programming project.
+Had this been more practical, I probably would have continued working on it. Being able to send SQL code to a database as an argument (e.g. `node delete.js 1` would remove the item with the ID of 1, although I was having issues around that point) is an interesting way to approach this, and I'm leaving this on a branch since I actually think that this is a lot cooler than what I was able to do with PHP. Either way, I spent a lot of time working on this, and I have to put it somewhere.
