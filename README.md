@@ -9,6 +9,14 @@ This application requires:
 These applications are bundled together via XAMPP. [[Download Link](https://www.apachefriends.org/download.html)]
 The setup is quite simple once you have these applications installed, as you just need to run Apache and MySQL.
 
+#### Note on setting up the Apache server
+You may have to edit the httpd.conf file in order to change the port you're running the server on. I set my port to 8080.
+
+#### Note on setting up the SQL Server
+- Once the Apache and MySQL servers are running, go to localhost:[port]/phpmyadmin
+- Click on the SQL tab on the top navigation bar
+- Input the SQL query that is located in tasks.sql and select Go to create the database 
+
 ### Dependencies
 This application uses PHP to connect to a locally stored MySQL database. Using the tools provided through XAMPP's installer, you can easily host this todo list application. The SQL code required to create the database has now been included.
 
