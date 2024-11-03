@@ -1,166 +1,168 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Body styling */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  margin: 0;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-family: Arial, sans-serif; /* Set the font for the body */
+  background-color: #f4f4f9; /* Light background color */
+  color: #333; /* Dark text color */
+  margin: 0; /* Remove default margin */
+  padding: 2rem; /* Add padding around the body content */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children horizontally */
 }
 
 /* Container for main content */
-/* .container {
-  max-width: 600px;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-} */
 .container {
-  background: #ffffff;
-  width: 400px;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background: #ffffff; /* White background for the container */
+  width: 400px; /* Fixed width for the container */
+  padding: 2rem; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center align text inside the container */
 }
 
+/* Header styling */
 .header h2 {
-  font-size: 2.5rem;
-  color: #4a90e2;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem; /* Large font size for the main header */
+  color: #4a90e2; /* Blue color for the header */
+  margin-bottom: 0.5rem; /* Margin below the header */
 }
 
 .header p {
-  font-size: 1rem;
-  color: #888;
-  margin-bottom: 1.5rem;
+  font-size: 1rem; /* Smaller font size for the subheader */
+  color: #888; /* Gray color for the subheader */
+  margin-bottom: 1.5rem; /* Margin below the subheader */
 }
 
 /* Title styling */
 .title {
-  text-align: center;
-  font-size: 2rem;
-  color: #4a90e2;
-  margin-bottom: 1rem;
+  text-align: center; /* Center align the title */
+  font-size: 2rem; /* Font size for the title */
+  color: #4a90e2; /* Blue color for the title */
+  margin-bottom: 1rem; /* Margin below the title */
 }
 
 /* Subtitle styling */
 .subtitle {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Margin below the subtitle */
 }
 
 /* Header styling for Task List */
 .task-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space out elements to the edges */
+  align-items: center; /* Center align items vertically */
+  margin-bottom: 1.5rem; /* Margin below the task header */
 }
 
 .task-header h3 {
-  font-size: 1.5rem;
-  color: #555;
+  font-size: 1.5rem; /* Font size for the task list header */
+  color: #555; /* Dark gray color for the task list header */
 }
 
+/* Styling for Add Task button */
 .add-task {
-  padding: 0.5rem 1rem;
-  background-color: #4a90e2;
-  color: #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  background-color: #4a90e2; /* Blue background color */
+  color: #ffffff; /* White text color */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-weight: bold; /* Bold text for the button */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Hover effect for Add Task button */
 .add-task:hover {
-  background-color: #357abd;
+  background-color: #357abd; /* Darker blue on hover */
 }
 
 /* Task list styling */
 ul.task-list {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: none; /* Remove bullet points from list */
+  padding: 0; /* Remove default padding */
 }
 
+/* Individual task item styling */
 li.task-item {
-  background-color: #f9f9f9;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  background-color: #f9f9f9; /* Light gray background for task items */
+  margin-bottom: 1rem; /* Margin below each task item */
+  padding: 1rem; /* Padding inside each task item */
+  border-radius: 5px; /* Rounded corners for task items */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Space out content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for task items */
 }
 
+/* Task title styling */
 .task-title {
-  font-size: 1.2rem;
-  color: #4a90e2;
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.3s ease;
+  font-size: 1.2rem; /* Font size for the task title */
+  color: #4a90e2; /* Blue color for the task title */
+  font-weight: bold; /* Bold text for the title */
+  text-decoration: none; /* Remove underline from link */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+/* Hover effect for task title */
 .task-title:hover {
-  color: #357abd;
+  color: #357abd; /* Darker blue on hover */
 }
 
+/* Styling for task date */
 .task-date {
-  font-size: 0.9rem;
-  color: #888;
-  margin-top: 0.3rem;
+  font-size: 0.9rem; /* Smaller font size for the task date */
+  color: #888; /* Gray color for the task date */
+  margin-top: 0.3rem; /* Margin above the date */
 }
 
 /* Buttons for Edit and Delete */
 .task-buttons {
-  display: flex;
-  gap: 0.5rem;
+  display: flex; /* Use flexbox for button layout */
+  gap: 0.5rem; /* Space between buttons */
 }
 
+/* Edit button styling */
 .edit-button {
-  padding: 0.3rem 0.8rem;
-  background-color: #ffce00;
-  color: #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  padding: 0.3rem 0.8rem; /* Padding inside the button */
+  background-color: #ffce00; /* Yellow background color */
+  color: #ffffff; /* White text color */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 0.9rem; /* Font size for the button */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Hover effect for edit button */
 .edit-button:hover {
-  background-color: #d4a700;
+  background-color: #d4a700; /* Darker yellow on hover */
 }
 
+/* Delete button styling */
 .delete-button {
-  padding: 0.3rem 0.8rem;
-  background-color: #e74c3c;
-  color: #ffffff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  padding: 0.3rem 0.8rem; /* Padding inside the button */
+  background-color: #e74c3c; /* Red background color */
+  color: #ffffff; /* White text color */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from link */
+  font-size: 0.9rem; /* Font size for the button */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
+/* Hover effect for delete button */
 .delete-button:hover {
-  background-color: #c0392b;
+  background-color: #c0392b; /* Darker red on hover */
 }
 
-/* Empty list message */
+/* Empty list message styling */
 .no-tasks {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #888;
-  margin-top: 1rem;
+  text-align: center; /* Center align the message */
+  font-size: 1.1rem; /* Font size for the no tasks message */
+  color: #888; /* Gray color for the message */
+  margin-top: 1rem; /* Margin above the message */
 }
-
