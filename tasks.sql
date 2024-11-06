@@ -5,6 +5,13 @@ CREATE TABLE `tasks` (
     `todoDescription` text COLLATE utf8_bin NOT NULL, -- Description of the todo task, can hold longer text
     `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP -- Timestamp of when the task is created, defaults to the current time
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8 COLLATE = utf8_bin;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
 -- Use InnoDB engine for ACID compliance and set character set to UTF-8
 -- Add a unique key constraint on the 'id' column to ensure each value is unique
 ALTER TABLE `tasks` ADD UNIQUE KEY `id` (`id`);

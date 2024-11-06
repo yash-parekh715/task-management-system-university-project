@@ -1,6 +1,12 @@
 <?php
+session_start(); // Start the session
 // Include database connection file
 require_once "db_connect.php";
+if (!isset($_SESSION['user_id'])) {
+    // User is not logged in, redirect to login page
+    header("Location: login.php");
+    exit();
+}
 
 $message = ''; // Initialize message variable to hold success or error messages
 
